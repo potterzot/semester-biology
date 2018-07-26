@@ -2,12 +2,13 @@
 layout: page
 title: Assignment Schedule
 assignments: ['Data Entry and Storage', 'Database Queries',
-'Introduction to R and RStudio', 'Working with Data', 'Data Visualization',
-'Projects Version Control and Structure', 'Project Week', 'Working with Spatial Data',
-'Working with Spatial Data 2', 'Programming Fundamentals 1',
-'Programming Fundamentals 2', 'Project Week', 'Working with Databases',
-'Knitr', 'Project Week', 'Project Week']
+'Introduction to R and RStudio', ' ”Hurricane Week” ', 'Working with Data', 'Data Visualization',
+'Projects Structure', 'Version Control', 'Working with Spatial Data', 'Programming Fundamentals 1',
+'Programming Fundamentals 2', 'Project Week', 'Knitr',
+'gganimate', 'tidyr', 'Project Week']
 ---
+
+[Assignment submission & checklist]({{ site.baseurl }}/materials/turn-in-checklist)
 
 {% include assignments.html %}
 

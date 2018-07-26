@@ -13,11 +13,6 @@ language: R
 >
 > * Consider removing the `dplyr` package so you can demonstrate installing it.
 >     * Linux users: you may not want to do this because the source install is slow
->
-> INSTALL WARNING: Some Windows users have issues installing `dplyr` receiving
-> errors that the associate files cannot be copied. This is an issue with
-> McAfee anti-virus. Streaming protection should be temporarily disabled to
-> allow installation.
 
 ### Packages
 
@@ -45,6 +40,7 @@ surveys <- read.csv("surveys.csv")
 * Filter: 
     * `filter(surveys, species_id == "DS")`
     * `filter(surveys, species_id == "DS", year > 1995)`
+    * `filter(surveys, species_id == "DS" | species_id == "DM")`
 * Mutate: 
     * `mutate(surveys, hindfoot_length_cm = hindfoot_length / 10)`
 
@@ -111,7 +107,7 @@ surveys %>%
   summarize(avg_weight = mean(weight, na.rm=TRUE))
 ```
 
-> Do [Fix the Code]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-R).
+> Do [Exercise 5 - Fix the Code]({{ site.baseurl }}/exercises/Dplyr-fix-the-code-R).
 
 ### Using `dplyr` with databases
 
@@ -120,34 +116,55 @@ surveys %>%
     * Lets the database do the heavy lifting
         * Faster
         * No RAM limits
+* Need to install the `dbplyr` package
 
 ```
-portaldb <- src_sqlite("portal_mammals.sqlite")
+library(DBI)
+portaldb <- dbConnect(RSQLite::SQLite(), "portal_mammals.sqlite")
 surveys <- tbl(portaldb, "surveys")
 surveys
+species <- tbl(portaldb, "species")
+portal_data <- inner_join(surveys, species, by = "species_id") %>%
+               select(year, month, day, genus, species)
+```
+
+* Can also extract data directly using SQL
+
+```
 query <- "SELECT year, month, day, genus, species
           FROM surveys JOIN species
-          ON surveys.species_id = species.species_id"
-tbl(portaldb, sql(query))
+          USING(species_id)"
+portal_data <- dbGetQuery(portaldb, query)
 ```
+
+* Either of these runs the query in the database
+
+> Do [Exercise 6 - Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
 
 * Speed example using Breeding Bird Survey of North America data
     * ~85 million cells (>250 MB)
 
 ```
 # Loading from SQLite completes instantly
-bbs_sqlite <- src_sqlite("bbs.sqlite")
-bbs_counts <- tbl(bbs_sqlite, "bbs_counts")
+bbs_sqlite <- dbConnect(RSQLite::SQLite(), "bbs.sqlite")
+bbs_counts <- tbl(bbs_sqlite, "breed_bird_survey_counts")
 bbs_counts
 
 # Loading from csv takes 30 seconds
 bbs_counts_csv <- read.csv("BBS_counts.csv")
 ```
 
-> Do [Links to Databases]({{ site.baseurl }}/exercises/Dplyr-link-to-databases-R).
-
-
 * Queries and data manipulation functions return similar results with various 
-  headings (`Source:   query`).
+  headings (`Source: SQL`)
+* Number of rows is unknown as shown by `??`
 * Queries and data manipulation results will remain in the external database.
 * Use `collect()` to store results in a local data frame (`# A tibble`).
+
+```
+portal_data <- inner_join(surveys, species, by = "species_id") %>%
+               select(year, month, day, genus, species) %>%
+			   collect()
+```
+
+
+* If you want to store a table from R in the database use `copy_to()`

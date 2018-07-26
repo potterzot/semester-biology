@@ -19,6 +19,11 @@ language: SQL
 * Queries - store questions about the data
     * If we update the data, the query asks the same question of the new data.
 
+### Using SQLite Manager
+
+* Use `Execute SQL` tab
+* Run SQL w/ keyboard shortcut `command` + `;`
+
 ### Selecting columns
 
 * Choose which columns to return.
@@ -86,8 +91,8 @@ FROM surveys;
 ### Filtering
 
 * Use `WHERE` to select only the rows meeting certain criteria.
-    * Follow `WHERE` with conditional statement
-        * Conditional operator links column and condition
+    * Follow `WHERE` with a conditional statement
+        * General form: column, condition, value
         
         `=`       | equals
         `>`  `<`  | greater / less than
@@ -132,14 +137,14 @@ WHERE species_id = 'DS' AND year > 1990
 
 ### Style
 
-* SQL generally doesn't care about capitalization for line breaks. So it will
-run a query like this.
+* SQL generally doesn't care about capitalization or line breaks. So it will run
+a query like this.
 
 ```
 seLEcT year, MONTH, dAY, WEIght FrOm SURveyS wheRe hindfoot_LENGTH > 30 aND spECIes_ID = 'DM';
 ```
 
-* This is difficult to read so we follow style of writing SQL code
+* This is difficult to read so we follow style rules for writing SQL code
     * Capitalize SQL commands
     * Lowercase variable names
 	* One clause/line

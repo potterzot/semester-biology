@@ -9,7 +9,7 @@ language: SQL
 >
 > *  download [`portal_mammals.sqlite`](https://ndownloader.figshare.com/files/2292171).
 > * connect `portal_mammals.sqlite` to SQLite Manager.
-> * display a fully joined version of the Portal data using
+> * display a fully joined version of the Portal data using:  
 > `SELECT * FROM surveys JOIN species ON surveys.species_id = species.species_id JOIN plots ON surveys.plot_id = plots.plot_id;`
 
 ### Why use multiple tables
@@ -24,6 +24,7 @@ table.
     * `surveys`: information about individuals
     * `species`: information about species
     * `plots`: information about plots
+* If a species name changes we only need to change it in the `species` table
 * Connect tables using joins to describe relationships between tables
 (*"relational" database*)
 
@@ -74,7 +75,7 @@ JOIN species USING (species_id);
 * Use multiple `JOIN`s to link multiple tables.
 
 ```
-SELECT year, month, day, genus, species, plot_type
+SELECT year, month, day, taxa plot_type
 FROM surveys
 JOIN species ON surveys.species_id = species.species_id
 JOIN plots ON surveys.plot_id = plots.plot_id;
@@ -86,8 +87,7 @@ JOIN plots ON surveys.plot_id = plots.plot_id;
 * It is safer to write a query that links fields to their table. 
 
 ```
-SELECT surveys.year, surveys.month, surveys.day, species.genus, 
-species.species, plots.plot_type
+SELECT surveys.year, surveys.month, surveys.day, species.taxa, plots.plot_type
 FROM surveys
 JOIN species ON surveys.species_id = species.species_id
 JOIN plots ON surveys.plot_id = plots.plot_id;
@@ -96,7 +96,7 @@ JOIN plots ON surveys.plot_id = plots.plot_id;
 * Use abbreviations to help with readability.
 
 ```
-SELECT sv.year, sv.month, sv.day, sp.genus, sp.species, p.plot_type
+SELECT sv.year, sv.month, sv.day, sp.taxa, p.plot_type
 FROM surveys sv
 JOIN species sp  ON sv.species_id = sp.species_id
 JOIN plots p ON sv.plot_id = p.plot_id;

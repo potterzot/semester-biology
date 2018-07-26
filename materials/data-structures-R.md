@@ -11,7 +11,7 @@ language: R
 * Create using `c()`, which stands for "combine"
 
 ```
-sites <- c("a", "a", "b", "b")
+sites <- c("a", "a", "b", “c”)
 ```
 
 * Functions:
@@ -23,6 +23,7 @@ sites <- c("a", "a", "b", "b")
     * `sites[1:3]`
         * `1:3` makes a vector. So, this is the same as
     * `sites[c(1, 2, 3)]` 
+    * `sites[c(4, 1, 3)]`
         * You can use a vector to get any subset or order you want
 
 * Math functions:
@@ -49,7 +50,7 @@ total_number <- density_ha * area_ha
         * Not `=`. `=` is used for assignment.
         * `!=`, `<`, `>`
 
-> Do [Exercise 9 - Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
+> Do [Exercise 8 - Shrub Volume Vectors]({{ site.baseurl }}/exercises/Vectors-shrub-volume-vectors-R/).
 
 
 ### Matrices (if linear algebra folks)
@@ -61,6 +62,15 @@ x <- matrix(1:6, 2)
 y <- matrix(1:3, ncol = 1)
 x %*% y
 ```
+
+### Projects
+
+* Problems with working directories
+* Turn folder into project
+* Creates .Rproj file
+    * Isn’t project itself
+    * Contains project info
+    * Don’t change manually
 
 ### Data frames
 
@@ -78,43 +88,30 @@ surveys <- data.frame(sites, density_ha, area_ha)
     * `length(surveys)`
     * `nrow(surveys)`, `ncol(surveys)`
 * Subsetting columns:
-    * `surveys["sites"]`
-    * `surveys[c("counts", "weights")]`
-    * `surveys$sites`
-    * `surveys[["sites"]]`
-
+    * `surveys[“area_ha”]`
+    * `surveys[c(“area_ha”, “sites”)]`
+    * `surveys$area_ha`
+    * `surveys[[“area_ha”]]`
 
 ### Importing data
 
 * `read.csv()`
-* Download the file for the Shrub Volume Data Frame exercise
-* How do we tell R where this file is
-
-> When someone says `setwd` discuss issues
->   * Code doesn't work on different computers
->   * Even worse if collaborating with several people
-> Ask if anyone has heard of projects
-
-### Projects
-
-* Start a new project
-* Create a `data` subdirectory
-* Download Shrub Volume Data Frame file to that directory
+* Download [the file]({{ site.baseurl }}/data/shrub-dimensions-labeled.csv) for the Shrub Volume Data Frame exercise
+* Move to new data subfolder
 * Load it
 
 ```
-shrub_data <- read.csv('./data/shrub-dimensions-labeled.csv')
+shrub_data <- read.csv('data/shrub-dimensions-labeled.csv')
 ```
 
-> DO NOT USE setwd() FOR THIS CLASS
+### File paths
 
-> Do [Exercise 10 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
+* Use relative path with projects
+* Project is self-contained unit
+* DO NOT USE setwd() FOR THIS CLASS
+    * Code doesn't work on different computers
+    * Even worse if collaborating with several people
 
-### Project structure
+> Do [Exercise 9 - Shrub Volume Data Frame]({{ site.baseurl }}/exercises/Data-frames-shrub-volume-data-frame-R).
 
-* Two common structures
-* code in top-level directory with subdirectories for data, results, etc
-  (*possibly with subdirectories of their own*)
-* code in a separate subdirectory
-
-> Assign remaining exercises.
+> Assign remaining exercises. Submit as compressed main folder, see [Assignment Submission & Checklist]({{ site.baseurl. }}/materials/turn-in-checklist)

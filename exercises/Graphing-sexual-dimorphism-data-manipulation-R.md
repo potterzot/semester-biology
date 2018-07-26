@@ -48,8 +48,8 @@ resulted in a lot of plots, but many of them had low sample sizes.
    difference between male and female masses for each species and look at the
    distribution of those values for all species in the data.
    
-   Use `mutate()` to create a new column which is the relative size difference
-   between female and male masses 
+   In the original data frame, use `mutate()` to create a new column which is the 
+   relative size difference between female and male masses 
 
    `(F_mass - M_mass) / F_mass`
 
@@ -60,3 +60,4 @@ resulted in a lot of plots, but many of them had low sample sizes.
    difference for each family, only including families with more than 25
    species.
 
+4. Save the figure from task 3 as a jpg file with the name `sexual_dimorphism_histogram.jpg`. 

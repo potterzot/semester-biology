@@ -1,9 +1,9 @@
 ---
 layout: page
 element: assignment
-title: Projects Version Control and Structure
+title: Version Control
 language: R
-exercises: ['Set Up Git', 'First Commit', 'Importing Data', 'Commit Multiple Files', 'Pushing Changes', 'Pulling and Pushing', 'Project Proposal']
+exercises: ['Set Up Git', 'First Solo Commit', 'Second Solo Commit', 'Commit Multiple Files', 'Pushing Changes', 'Pulling and Pushing', 'Create Project Repository']
 ---
 
 #### Learning Objectives
@@ -14,5 +14,8 @@ exercises: ['Set Up Git', 'First Commit', 'Importing Data', 'Commit Multiple Fil
 > - collaborate with someone else via a remote repository
 
 {% include reading.html %}
+
+### How To
+The exercises in this assignment should be worked through along with the [Version Control lecture notes]({{ site.baseurl }}/materials/version-control-R). Start at the beginning of the lecture notes and do the exercises where they are linked to in the notes. 
 
 {% include assignment.html %}
