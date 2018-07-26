@@ -11,16 +11,16 @@ permalink:        pretty
 # Setup
 title:            Data Carpentry for Biologists
 description:      'Teaching the tools to get computers to do cool science'
-url:              http://www.datacarpentry.org/semester-biology
-baseurl:          /semester-biology
-email:            datacarpentrysemester@weecology.org
-feedbackurl:      https://docs.google.com/forms/d/e/1FAIpQLSdV_polFmoukgjcs1IC0Dd4iO1rdgwFnOds28xC_ma_z4tNIw
+url:              http://potterzot.com/semester-microeconomics-i
+baseurl:          /semester-microeconomics-i
+email:            nicholas.a.potter@wsu.edu
+feedbackurl:      https://goo.gl/forms/8SiOwdi19kN8cINJ3
 author:
-  name:           'Ethan White'
-  url:            https://twitter.com/ethanwhite
+  name:           'Nicholas Potter'
+  url:            https://twitter.com/potterzot
 
 github:
-  repo:           https://github.com/datacarpentry/semester-biology
+  repo:           https://github.com/potterzot/semester-microeconomics-i
   #               Be sure the 'Issues' feature is activated in 'Settings'
 
 theme: jekyll-theme-minimal
