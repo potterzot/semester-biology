@@ -1,144 +1,59 @@
 ---
 layout: page
-title: Syllabus
-catalog: WIS 6934
+title: 'Syllabus'
+catalog: ECONS 101.01 [SSCI]
 credits: 3
-semester: Fall 2017
-professor: Dr. Ethan White and Kristina Riemer
-office: Room 1 in Building 150 (just north of Newins-Zeigler)
-email: ethanwhite@ufl.edu
-phone: 352-294-2081
-schedule: ['Tuesdays, 4:05-4:55, 222 Newins-Ziegler Hall',
-           'Fridays, 11:45-1:40, 219 Newins-Ziegler Hall']
-office_hours: Monday 2-3:15 and Wednesday 11-12
-office_hours_location: Newins-Zeigler 203
-TA: Andrew Marx
-TA_email: andrewjmarx@ufl.edu
+semester: Fall 2018
+professor: Nicholas Potter
+office: Hulbert Hall 123F (In the Impact Center suite)
+email: nicholas.a.potter@wsu.edu
+schedule: 'MWF, 1:10-2:00, Johnson C107'
+
+office_hours: Monday 3:10-5:00pm
+office_hours_location: Hulbert Hall 123F
+TA: Michael Mahoney
+TA_email: michael.mahoney@wsu.edu
+TA_office_hours:
+TA_office_hours_location:
 ---
 
-## {{ site.title }} 
+# {{ page.title }}: {{ page.catalog }} {{ site.title }}
 
-{{ page.catalog }}, {{ page.credits }} Credits, {{ page.semester }}
+{{ page.credits }} Credits, {{ page.semester }}
 
-### Professor
+**Time & Location**: {{ page.schedule }}
 
-{{ page.professor }}
+**Current Syllabus**: The syllabus and other relevant class information and resources will be posted at [{{ site.url}}]({{ site.baseurl }}/) as well as on blackboard at [https://learn.wsu.edu](https://learn.wsu.edu).
 
-Office: {{ page.office }}
+**Current Schedule**: The details course schedule is available on the course website at: [{{ site.url }}/schedule]({{ site.baseurl }}/schedule) and on blackboard at [https://learn.wsu.edu](https://learn.wsu.edu).
 
-Email (best way to contact us):
-[{{ page.email }}](mailto:{{ page.email }}), [kristina.riemer@ufl.edu](mailto:kristina.riemer@ufl.edu)
+**Professor**: {{ page.professor }}, {{ page.office }}, {{ page.email }}, Office hours: {{ page.office_hours }}, {{ page.office_hours_location }}
 
-Phone: {{ page.phone }}
+**Teaching Assistant**: {{ page.TA }}, {{ page.TA_office }}, {{ page.TA_email }}, Office hours: {{ page.TA_office_hours }}, {{ page.TA_office_hours_location }}
 
+Additional office hours by appointment. *Note: schedules get very busy, so no appointments can be made less than 24 hours in advance.*
 
-### Times & Location
+### Texts
 
-**Note: class is in different locations depending on the day of the week**
+**Required:** *Microeconomics in Modules*, Krugman, P. and R. Wells. 3rd Edition, Worth Publishers, New York, 2014.
 
-{% for class in page.schedule %}
-  {{ class }}
-{% endfor %}
+We will also draw substantially from *The Economy*, The CORE Team, Oxford University Press, 2017. Available at: [http://www.core-econ.org](http://www.core-econ.org). This is a free ebook (also available in print) that has an accompanying iphone and android app.
 
 
-### Office Hours
+### Required Web Access
 
-Times: {{ page.office_hours }}
+* *Blackboard*: Course information, lecture material, course links including homework and writing assignment (https://learn.wsu.edu)
+* *Sapling*: Online homework and potential extra credit. An electronic copy of the Krugman text is also available at this website. You may access Sapling via Blackboard in the *Homework* tab.
+* *NetTutor*: Writing assignments must be submitted to [NetTutor](http://www.nettutor.com/worth/econ/wsu).  Please access NetTutor via Blackboard in the *Writing Assignments* tab.
 
-Location: {{ page.office_hours_location }}
+### Prerequisites
 
-Or by appointment. *Note: my schedule gets very busy during the semester so
-please try to schedule appointments as far in advance as possible. In general it
-will be very difficult to set up appointments less than 24 hours in advance.*
-
-
-### Course TA
-
-{{ page.TA }}
-
-Email: [{{ page.TA_email }}](mailto:{{ page.TA_email }})
-
-
-### Website
-
-The syllabus and other relevant class information and resources will be posted
-at [{{ site.url}}]({{ site.baseurl }}/).
-Changes to the schedule will be posted to this site so please try to check it
-periodically for updates.
-
-
-### Course Communications
-
-Email: [{{ page.email }}](mailto:{{ page.email }})
-
-
-### Required Texts
-
-There is no required text book for this class.
+MATH 101, 103, 105, 106, 107, 108, 171, 201, 202, or STAT 205 or 212; or concurrent enrollment in MATH 106, 107, 108, 171, 201, 202, or STAT 212; or ALEKS placement score of 40% or higher.
 
 
 ### Course Description
- 
-Computers are increasingly essential to the study of all aspects of
-biology. Data management skills are needed for entering data without errors,
-storing it in a usable way, and extracting key aspects of the data for
-analysis. Basic programming is required for everything from accessing and
-managing data, to statistical analysis, to modeling. This course will provide an
-introduction to data management, manipulation, and analysis, with an emphasis on
-biological problems. Class will typically consist of short introductions or
-question & answer sessions, followed by hands on computing exercises. The course
-will be taught using R and SQLite, but the concepts learned will easily apply to
-all programming languages and database management systems. No background in
-programming of databases is required.
 
-
-### Prerequisite Knowledge and Skills
-
-Knowledge of basic biology.
-
-
-### Purpose of Course
-
-In this course you will learn all of the fundamental aspects of computer
-programming that are necessary for conducting biological research. By the end of
-the course you will be able to use these tools to import data into R, perform
-analysis on that data, and export the results to graphs, text files, and
-databases. By learning how to get the computer to do your work for you, you will
-be able to do more science faster.
-
-
-### Course Goals and Objectives
-
-Students completing this course will be able to:
-
-* Create well structured databases
-* Extract information from databases
-* Write simple computer programs in R
-* Automate data analysis
-* Apply these tools to address biological questions
-* Apply general data management and analysis concepts to other programming
-  languages and database management systems
-
-### Course Project
-
-Projects offer an opportunity to work with bigger data-related computing tasks
-and learn specific computing tools you need for your research. Projects can
-involve programming, databases, or both. They should be on
-something you are excited about.
-
-As a rough guideline projects should represent ~30-40 hours of work. Some class
-time will be provided for working on projects.
-
-Get more details about the project from the [Projects Introduction]({{ site.baseurl}}/materials/projects).
-
-### How this course relates to the Student Learning Outcomes in Wildlife Ecology and Conservation
-
-This course contributes to the 'Quantitative Skills' and 'Conducting and
-Analyzing Independent/Original Research' Student Learning Outcomes specified in
-the
-[Ph.D. and MS in Wildlife Ecology and Conservation Academic Assessment Plans](http://assessment.aa.ufl.edu/Data/Sites/22/media/2013-14gaap/cals/2013-14-cals-wildlife-ecol-and-consvn-phd-aap.pdf),
-by providing students the skills and knowledge they need to manage and analyze
-the data used in research.
+Students will be introduced to economic models that explain consumer and firm behavior, market and policies outcomes, and the gains from trade. We will study markets as a system for allocating scarce resources and determining prices and outputs, with a particular focus on when and where markets fail and markets succeed. We will also study perfect competition, monopolies, and oligopolies and the implications of each for social welfare. A short introduction to game theory will include strategic behavior under oligopoly and perfect competition. Finally, we will explore the role of government in creating or fixing market failure.
 
 
 ### Teaching Philosophy
@@ -165,151 +80,208 @@ are attempting to solve. For more challenging topics class may start with 20-30
 minute demonstrations on the concepts followed by time to work on exercises.
 
 
-## Course Policies
+### Student Learning Outcomes
 
+* Learn the basic terminology of microeconomics.
+* Apply the concepts of choice and opportunity cost to basic situations involving scarcity, and be able to clearly identify feasible choices.
+* Understand how markets operate and be able to identify welfare outcomes for consumers and producers.
+* Understand how different market structures, firm technologies, and economic and social policies affect market equilibrium and welfare outcomes.
+* Understand gains from international trade.
+* Develop information literacy skills as they relate to various microeconomic concepts and issues.
 
-### Attendance Policy
+This course is designed to meet the following [WSU learning goals](http://ugr.wsu.edu/faculty/7goals.html):
 
-Attendance will not be taken or factor into the grades for this class. However,
-experience suggests that students who regularly miss class struggle to learn the
-material.
+* LG1 -- Critical and creative thinking
+* LG2 -- Quantitative Reasoning
+* LG3 -- Scientific Literacy
 
+### Course Topics
+| Module | Topic |
+| ------ | ----- |
+| 3 | Production Possibilities Frontier Model
+| 4 | Comparative Advantage and Trade
+| 16 | Gains from Trade |
+| 18 | Making Decisions |
+| 5 | Demand |
+| 6 | Supply and Equilibrium |
+| 7 | Changes in Equilibrium |
+| 11 | Consumer and Producer Surplus |
+| 12 | Efficiency and Markets |
+| 13 | Price Controls |
+| 14 | Quantity Controls |
+| 8 | Elasticity |
+| 9 | Interpreting Elasticities |
+| 10 | Other Elasticities |
+| 15 | Taxes |
+| 21 | Production Function |
+| 22 | Firm Costs |
+| 23 | Long--run Costs and Economies of Scale |
+| 24 | Introduction to Market Structure |
+| 25 | Perfect Competition |
+| 26 | Graphing Perfect Competition |
+| 27 | Long--run Outcomes in Perfect Competition |
+| 28 | Monopoly |
+| 29 | Monopoly and Public Policy |
+| 30 | Price Discrimination |
+| 31 | Oligopoly |
+| 32 | Game Theory |
+| 34 | Monopolistic Competition |
+| 35 | Product Differentiation and Advertising |
+| 20 | Maximizing Utility |
+| 36 | Externalities |
+| 17 | Supply \& Demand in International Trade |
 
-### Quiz/Exam Policy
-
-There are no quizzes or exams in this course.
-
-
-### Make-up policy
-
-Late assignments will be docked 20% and will not be accepted more than 48 hours
-late except in cases of genuine emergencies that can be documented by the
-student or in cases where this has been discussed and approved in advance. This
-policy is based on the idea that in order to learn how to use computers well,
-students should be working with them at multiple times each week. Time has been
-allotted in class for working on assignments and students are expected to work
-on them outside of class. It is intended that you should have finished as much
-of the assignment as you can based on what we have covered in class by the
-following class period. Therefore, even if something unexpected happens at the
-last minute you should already be close to done with the assignment. This policy
-also allows rapid feedback to be provided to students by returning assignments
-quickly.
-
-
-### Assignment policy
-
-Assignments are due Monday night by 11:59 pm Eastern Time. Assignments should be
-submitted via Canvas.
-
-
-### Course Technology
-
-Students are required to provide their own laptops and to install free and open
-source software on those laptops (see [Setup]({{ site.baseurl }}/computer-setup)
-for installation instructions). Support will be provided by the instructor in
-the installation of required software. If you don't have access to a laptop
-please contact the instructor and they will do their best to provide you with
-one.
-
-
-## UF Policies
-
-
-### University Policy on Accommodating Students with Disabilities
-
-Students requesting accommodation for disabilities must first register with the
-Dean of Students Office (http://www.dso.ufl.edu/drc/). The Dean of Students
-Office will provide documentation to the student who must then provide this
-documentation to the instructor when requesting accommodation. You must submit
-this documentation prior to submitting assignments or taking the quizzes or
-exams. Accommodations are not retroactive, therefore, students should contact
-the office as soon as possible in the term for which they are seeking
-accommodations.
-
-
-### University Policy on Academic Misconduct
-
-Academic honesty and integrity are fundamental values of the University
-community. Students should be sure that they understand the UF Student Honor
-Code at http://www.dso.ufl.edu/students.php.
-
-
-### Netiquette and Communication Courtesy
-
-All members of the class are expected to follow rules of common
-courtesy in all email messages, threaded discussions and chats.
+A more detailed schedule will be posted in Blackboard.  If there is any material you want me to go more in-depth, please email me or my TA's.
 
 
 ## Getting Help
 
-For issues with technical difficulties for E-learning in Canvas, please contact the UF Help Desk at:
+### EconLab –- SES Economics Tutoring Center
+An EconS 101/102 help desk is located in the Multicultural Student Services center, room 410 of the [CUB](https://map.wsu.edu/t/7FE467C7). They are available from 3 to 7 pm, Monday to Thursday (closed on Friday).  They open starting the second week of instruction and close during Finals week.  Graduate and undergraduate tutors are there to assist you in learning the material covered in this class.  Please visit the help desk if you are having any difficulty with homework, quizzes, writing assignments, or exams.
 
-* Learning-support@ufl.edu 
-* (352) 392-HELP - select option 2
-* https://lss.at.ufl.edu/help.shtml 
-
-Any requests for make-ups due to technical issues MUST be accompanied by the
-ticket number received from LSS when the problem was reported to them. The
-ticket number will document the time and date of the problem. You MUST e-mail
-your instructor within 24 hours of the technical difficulty if you wish to
-request a make-up.
-
-Other resources are available at http://www.distance.ufl.edu/getting-help for:
-
-* Counseling and Wellness resources
-* Disability resources
-* Resources for handling student concerns and complaints
-* Library Help Desk support
-
-Should you have any complaints with your experience in this course please visit
-http://www.distance.ufl.edu/student-complaints to submit a complaint.
+###
 
 **Most importantly, if you are struggling for any reason please come talk to me
 and I will do my best to help.**
 
 
-## Grading Policies
 
-Grading for this course will revolve around a combination of assignments (75%)
-and an independent project (25%).
 
-There will be 11 equally weighted assignments. One problem from each assignment
-(selected at the instructors discretion after the assignments have been
-submitted) will receive a thorough code review and a detailed grade. Other
-problems will be graded as follows:
 
-* Produces the correct answer using the requested approach: 100%
-* Generally uses the right approach, but a minor mistake results in an incorrect
-    answer: 90%
-* Attempts to solve the problem and makes some progress using the core concept:
-    50%
-* Answer demonstrates a lack of understanding of the core concept: 0%
 
-Independent projects may focus on databases, programming, or a combination or
-the two.
 
-### Grading scale
+### Grading
+
+Grading will be based on the following components: **12 weekly homeworks**, **4 written assignments**, **a midterm**, **a final**, and any **extra credit** submitted. There are 110 total possible points, with each component weighted as follows:
+
+* 12 Homeworks (drop 2 lowest): 25
+* 4 Written Assignments (drop lowest): 25
+* Midterm: 25
+* Final: 25
+* Participation and Extra Credit: 10
+
+ Your letter grade will be determined according to the following percent distribution:
 
 - **A 93-100**
-- **A- 90-92**
-- **B+ 87-89**
-- **B 83-86**
-- **B- 80-82**
-- **C+ 77-79**
-- **C 73-76**
-- **C- 70-72**
-- **D+ 67-69**
-- **D 60-66**
-- **E <60**
+- **A- 90-92.9**
+- **B+ 87-89.9**
+- **B 83-86.9**
+- **B- 80-82.9**
+- **C+ 77-79.9**
+- **C 73-76.9**
+- **C- 70-72.9**
+- **D+ 67-69.9**
+- **D 60-66.9**
+- **F <60**
 
 
-## Course Schedule
+#### Homework
 
-The details course schedule is available on the course website at:
-[{{ site.url }}/schedule]({{ site.baseurl }}/schedule).
+There will be 12 homework assignments, due each Friday by 5pm. We will often (but not always) spend the last part of class on Friday discussing the homework. Answers will be available at 5pm, and as a result **no late homeworks will be accepted. There are no exceptions. However, I will drop the lowest two homework scores.**
+
+If you are not happy with your score after submitting, you may resubmit one time as long as you do so before the deadline. If you restart the assignment, you will have to re-complete the questions you got correct as well as those you did not. **Be careful not to mark the wrong answer for a question you already got correct**.
+
+Sapling tech support is the only source for help with technical difficulties. Much to my chagrin, I do not have the ability to resolve technical issues with Sapling. To contact Sapling Technical Support, go to https://community.macmillan.com/community/digital-product-support, or call 1-800-936-6899.  As a reference, the course ID in Sapling is **68335**.
+
+There is a grace period before you have to pay, which means that, if you are waiting on Financial Aid, you can register to Sapling and receive access to the e-book and homework.  Once you receive your Financial Aid, you may pay for access for the rest of the semester.
+
+#### Writing Assignments
+
+There will be four written assignments, each roughly 1-2 pages in length. The due dates are listed on blackboard. **No late assignments will be accepted. There are no exceptions. However, I will drop the lowest score of the four writing assignments.**
+
+The first assignment, and potentially the third and fourth, will be done through NetTutor. You **must** register on the NetTutor webpage in order to complete the assignments.
+
+The second assignment will be peer graded.
+
+After the second assignment is completed, we will vote to determine whether to use NetTutor or use the peer grading method to grade the remaining two writing assignments.
+
+In the case of NetTutor, each written assignment is graded on two components: economics and grammar. Each component is graded as either *Meets Expectations* or *Needs Improvement*. If both components are graded as *Meets Expectations*, you'll receive full credit (100%) for that assignment. If you receive a *Needs Improvement* on either metric, you can revise and resubmit your essay no later than one week after receiving feedback. It will likely be worth seeking help from the EconLab, your TA, or myself to discuss revisions.
+
+#### Exams
+
+There will be three exams and a final.  Except for the final, the exam schedule will be posted in Blackboard and announced in class.  The regular exams will take place during class time.  The final exam will be cumulative, but with an emphasis on the material covered since the third test.
+
+The format of the exams will be multiple choice questions. Students can bring in one double-sided 4 $\times$ 6 inch note card for the exam. I will provide the most important formulas on the projector and you may use the note card to write in any additional material you may deem necessary.  Bubble sheets (or *Scantrons*) will be provided for each exam.  
+
+**I will not allow students to take a test late**. You can however arrange to take a test ahead of time if you have an official university-sanctioned event that conflicts with the exam time.  If you need to reschedule as a result of a non-official event (you've scheduled surgery for that day, or you need to attend a wedding, etc.) you can arrange to take the test ahead of time as well.
+
+**Final Exam**:  Monday, December 10, 1:00-3:00 pm. The room will be announced at least 2 weeks before the Final Exam.
+
+**The final exam is comprehensive and is given in a block format**.  This means that there are no exceptions for the time. I will only consider alternate times for **documented** extenuating circumstances.  **These circumstances do not include travel arrangements**.  I will also not consider alternate times if you contact me three weeks before the final.
+
+**Special Instructions regarding the Final Exam**
+
+* **Academic Rule 80**: A student will not be granted special examinations for the purpose of leaving the institution before the close of the semester.
+
+* **NO EARLY EXAMS**. There are no exceptions to this policy. Students should determine final exam times and dates before making travel or vacation plans at the close of each semester.
+
+* **Academic Rule 78**: During final examination week, if the scheduled arrangement results in students having three or more examinations scheduled for any one day, any one of their instructors is authorized to excuse the students from the regularly scheduled examination and give a final examination to the students during the special exams time blocks.
+
+#### Extra Credit
+
+You will have two opportunities to earn extra credit.  One is through Attendance as discussed above.  
+
+The other opportunity is a series of extra questions, "Module \#\#" in Sapling.  Note that they are due at different times in the semester and are meant to help you with homework.  As they are extra credit, I do not give extensions on them, unless there is a major technical issue with Sapling.  For each set, I will drop one or two of the lowest.  You must complete at least three from each set to get an extra credit dropped.  
 
 
-**Disclaimer:** This syllabus represents my current plans and objectives. As we
-go through the semester, those plans may need to change to enhance the class
-learning opportunity. Such changes, communicated clearly, are not unusual and
-should be expected.
+
+## Course Policies
+
+### Code of Conduct
+
+Life is hard enough without breaking each other down. In this class we will seek to build each other up. Interactions should be professional and respectful, and should not seek to exclude, intimidate, or insult.
+
+In particular, we do not tolerate harassment in any form. Prohibited harassing behavior includes but is not limited to:
+
+* written or verbal comments which have the effect of excluding people
+* causing someone to fear for their safety, such as through stalking, following, or intimidation
+* the display of sexual or violent images
+* unwelcome sexual attention
+* nonconsensual or unwelcome physical contact
+* sustained disruption of talks, events or communications
+* incitement to violence, suicide, or self-harm
+* continuing to initiate interaction (including photography or recording) with someone after being asked to stop
+* publication of private communication without consent
+
+Harassment is prohibited whether it occurs on- or offline, in class or outside of class, and the same standards apply to both.
+
+Thank you for helping make this a welcoming, friendly community for all.
+
+This is a modified code of conduct based on [The Carpentries code of conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html).
+
+### Attendance Policy
+
+Attendance will not be taken. That said, I expect students to attend every class. Students who do not come to class typically do not do well.
+
+In the event of a medical excuse or other serious problems, exceptions to this no-makeup policy will be considered following University policies. See Office of the Registrar, Our Academic Regulations, No. 73 Absences: http://registrar.wsu.edu/academic-regulations/ (you will need to scroll down).
+
+
+### Make-up policy
+
+There are no make-ups or late assignments accepted.
+
+
+## WSU Policies
+
+### Academic Integrity
+
+As an institution of higher education, Washington State University is committed to principles of truth and academic honesty. All members of the University community share the responsibility for maintaining and supporting these principles. When a student enrolls in Washington State University, the student assumes an obligation to pursue academic endeavors in a manner consistent with the standards of academic integrity adopted by the University. To maintain the academic integrity of the community, the University cannot tolerate acts of academic dishonesty including any forms of cheating, plagiarism, or fabrication. Washington State University reserves the right and the power to discipline or to exclude students who engage in academic dishonesty. Students found responsible for academic integrity violations may receive an F on the particular assignment or exam, as well as an F for the course.  Serious and/or repeated offenses may result in referral to the Office of Student Standards and Accountability and expulsion from WSU. Cheating is defined in the Standards for Student Conduct WAC 504-26-010 (3). Definitions of cheating can be found [http://app.leg.wa.gov/WAC/default.aspx?cite=504-26-010](http://app.leg.wa.gov/WAC/default.aspx?cite=504-26-010).
+
+You can learn more about Academic Integrity on your campus using the URL listed in the Academic Regulations section or to [http://www.academicintegrity.wsu.edu/](http://www.academicintegrity.wsu.edu/). Please use these resources to ensure that you don’t inadvertently violate WSU's standard of conduct.
+
+
+### Students with Disabilities
+
+Reasonable accommodations are available for students with a documented disability. If you have a disability and need accommodations to fully participate in this class, please either visit or call the Access Center ([Washington Building](https://map.wsu.edu/t/C4AA894F) 217; 509-335-3417) to schedule an appointment with an Access Advisor. All accommodations MUST be approved through the Access Center. For more information contact a Disability Specialist at 509-335-3417, or on-line via https://accesscenter.wsu.edu, Access.Center@wsu.edu.
+
+
+### Safety and Emergency Notification
+
+Washington State University is committed to enhancing the safety of the students, faculty, staff, and visitors. It is highly recommended that you review the Campus Safety Plan ([http://safetyplan.wsu.edu/](http://safetyplan.wsu.edu/)) and visit the Office of Emergency Management web site (http://oem.wsu.edu/) for a comprehensive listing of university policies, procedures, statistics, and information related to campus safety, emergency management, and the health and welfare of the campus community.
+
+
+### Classroom Safety
+
+Classroom and campus safety are of paramount importance at Washington State University, and are the shared responsibility of the entire campus population.  WSU urges students to follow the “Alert, Assess, Act” protocol for all types of emergencies and the ["Run, Hide, Fight"](https://www.fbi.gov/about/partnerships/office-of-partner-engagement/active-shooter-incidents) response for an active shooter incident. Remain ALERT (through direct observation or emergency notification), ASSESS your specific situation, and ACT in the most appropriate way to assure your own safety (and the safety of others if you are able).
+
+If you haven't yet, consider signing up for emergency alerts on your account at [MyWSU](https://portal.wsu.edu). For more information on this subject, campus safety, and related topics, please view the [FBI’s Run, Hide, Fight](https://youtu.be/5VcSwejU2D0) video and visit the [WSU safety portal](https://faculty.wsu.edu/classroom-safety/).

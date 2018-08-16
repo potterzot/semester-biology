@@ -9,8 +9,8 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            Data Carpentry for Biologists
-description:      'Teaching the tools to get computers to do cool science'
+title:            Foundations of Microeconomics
+description:      'An introductoin to arkets, behavior, and policy.'
 url:              http://potterzot.com/semester-microeconomics-i
 baseurl:          /semester-microeconomics-i
 email:            nicholas.a.potter@wsu.edu
