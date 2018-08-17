@@ -3,6 +3,14 @@ layout: page
 title: Readings
 ---
 
+{% for readingpage in site.pages %}
+  {% if readingpage.element == 'reading' %}
+    {% capture list_item %}* [{{ readingpage.title }}]({{ readingpage.url }}){% endcapture %}
+    * [{{ readingpage.title }}]({{ readingpage.url | prepend: site.baseurl }})
+  {% endif %}
+{% endfor %}
+
+
 ### SQL
 
 * [Data Entry and Storage](SQL-data)

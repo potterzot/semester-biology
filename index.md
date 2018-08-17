@@ -2,14 +2,7 @@
 layout: default
 ---
 
-This website hosts introductory material for teaching biologists how to interact
-with data including: data structure, database management systems, and
-programming for data manipulation, analysis, and visualization. It is designed
-to be used as a flipped university course and also to be useful for self-guided
-students. Instructors are welcome to modify and use the material for your own
-courses. We encourage collaborative development and contributions by
-instructors, with the hopes that this will lead to better training and resources
-for everyone.
+This website hosts material for the course 'Foundations of Microeconomics'. It is designed to provide students with lectures, homeworks, and activities for learning on their own. Instructors are welcome to modify and use the material for your own courses. I encourage collaborative development and contributions by instructors, with the hopes that this will lead to better training and resources for everyone.
 
 For Students
 : <a href="{{ site.baseurl}}/syllabus">
@@ -17,7 +10,7 @@ For Students
 : <a href="{{ site.baseurl}}/schedule">
   <i class="fa fa-calendar fa-fw"></i> Schedule</a>
 : <a href="{{ site.baseurl}}/materials/projects">
-  <i class="fa fa-folder-open fa-fw"></i> Projects</a>
+  <i class="fa fa-folder-open fa-fw"></i> Homeworks</a>
 : <a href="{{ site.baseurl }}/materials/turn-in-checklist">
   <i class="fa fa-check-square fa-fw"></i> Assignment Submission & Checklist</a>
 : <a href="{{ site.baseurl}}/START-for-self-guided-students">

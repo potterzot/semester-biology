@@ -7,17 +7,17 @@ semester: Fall 2018
 professor: Nicholas Potter
 office: Hulbert Hall 123F (In the Impact Center suite)
 email: nicholas.a.potter@wsu.edu
-schedule: 'MWF, 1:10-2:00, Johnson C107'
+schedule: 'MWF, 1:10-2:00 pm, Johnson C107'
 
-office_hours: Monday 3:10-5:00pm
+office_hours: Monday 3:10-5:00 pm
 office_hours_location: Hulbert Hall 123F
 TA: Michael Mahoney
 TA_email: michael.mahoney@wsu.edu
-TA_office_hours:
-TA_office_hours_location:
+TA_office_hours: Wednesday 11:00-1:00 pm
+TA_office_hours_location: Hulbert Hall 207A
 ---
 
-# {{ page.title }}: {{ page.catalog }} {{ site.title }}
+# {{ page.catalog }} {{ site.title }}
 
 {{ page.credits }} Credits, {{ page.semester }}
 
@@ -56,30 +56,6 @@ MATH 101, 103, 105, 106, 107, 108, 171, 201, 202, or STAT 205 or 212; or concurr
 Students will be introduced to economic models that explain consumer and firm behavior, market and policies outcomes, and the gains from trade. We will study markets as a system for allocating scarce resources and determining prices and outputs, with a particular focus on when and where markets fail and markets succeed. We will also study perfect competition, monopolies, and oligopolies and the implications of each for social welfare. A short introduction to game theory will include strategic behavior under oligopoly and perfect competition. Finally, we will explore the role of government in creating or fixing market failure.
 
 
-### Teaching Philosophy
-
-This class is taught using a flipped, learner-centered, approach, because
-learning to program and work with data requires actively working on
-computers. Flipped classes work well for all kinds of content, but I think they
-work particularly well for computer oriented classes. If you're interested in
-knowing more take a look at this great
-[info-graphic](http://www.knewton.com/flipped-classroom-2/).
-
-
-### Instructional Methods
-
-As a flipped classroom, students are provided with either reading or video
-material that they are expected to view/read prior to class. Classes will
-involve brief refreshers on new concepts followed by working on exercises in
-class that cover that concept. While students are working on exercises the
-instructor will actively engage with students to help them understand material
-they find confusing, explain misunderstandings and help identify mistakes that
-are preventing students from completing the exercises, and discuss novel
-applications and alternative approaches to the data analysis challenges students
-are attempting to solve. For more challenging topics class may start with 20-30
-minute demonstrations on the concepts followed by time to work on exercises.
-
-
 ### Student Learning Outcomes
 
 * Learn the basic terminology of microeconomics.
@@ -95,84 +71,47 @@ This course is designed to meet the following [WSU learning goals](http://ugr.ws
 * LG2 -- Quantitative Reasoning
 * LG3 -- Scientific Literacy
 
-### Course Topics
-| Module | Topic |
-| ------ | ----- |
-| 3 | Production Possibilities Frontier Model
-| 4 | Comparative Advantage and Trade
-| 16 | Gains from Trade |
-| 18 | Making Decisions |
-| 5 | Demand |
-| 6 | Supply and Equilibrium |
-| 7 | Changes in Equilibrium |
-| 11 | Consumer and Producer Surplus |
-| 12 | Efficiency and Markets |
-| 13 | Price Controls |
-| 14 | Quantity Controls |
-| 8 | Elasticity |
-| 9 | Interpreting Elasticities |
-| 10 | Other Elasticities |
-| 15 | Taxes |
-| 21 | Production Function |
-| 22 | Firm Costs |
-| 23 | Long--run Costs and Economies of Scale |
-| 24 | Introduction to Market Structure |
-| 25 | Perfect Competition |
-| 26 | Graphing Perfect Competition |
-| 27 | Long--run Outcomes in Perfect Competition |
-| 28 | Monopoly |
-| 29 | Monopoly and Public Policy |
-| 30 | Price Discrimination |
-| 31 | Oligopoly |
-| 32 | Game Theory |
-| 34 | Monopolistic Competition |
-| 35 | Product Differentiation and Advertising |
-| 20 | Maximizing Utility |
-| 36 | Externalities |
-| 17 | Supply \& Demand in International Trade |
-
-A more detailed schedule will be posted in Blackboard.  If there is any material you want me to go more in-depth, please email me or my TA's.
-
-
 ## Getting Help
 
 ### EconLab –- SES Economics Tutoring Center
 An EconS 101/102 help desk is located in the Multicultural Student Services center, room 410 of the [CUB](https://map.wsu.edu/t/7FE467C7). They are available from 3 to 7 pm, Monday to Thursday (closed on Friday).  They open starting the second week of instruction and close during Finals week.  Graduate and undergraduate tutors are there to assist you in learning the material covered in this class.  Please visit the help desk if you are having any difficulty with homework, quizzes, writing assignments, or exams.
 
-###
+### Counseling and Support Services
+
+WSU can be a wonderful experience, but can also involve stressors and other difficulties. Counseling services are available at [Cougar Health](https://cougarhealth.wsu.edu). In particular, you may want to contact:
+
+* [Crisis Support Services](https://cougarhealth.wsu.edu): 509-335-4511 (during business hours), 509-335-2159 (after hours).
+* [National Suicide Prevention Lifeline](https://suicidepreventionlifeline.org/talk-to-someone-now/): 1-800-273-8255
+* [Counseling Services](https://cougarhealth.wsu.edu/hours-and-location/)
 
 **Most importantly, if you are struggling for any reason please come talk to me
 and I will do my best to help.**
 
-
-
-
-
-
-
 ### Grading
 
-Grading will be based on the following components: **12 weekly homeworks**, **4 written assignments**, **a midterm**, **a final**, and any **extra credit** submitted. There are 110 total possible points, with each component weighted as follows:
+Grading will be based on the following components: **12 weekly homeworks**, **4 written assignments**, **two quizzes**, **a final exam**, **class participation** and any **extra credit** submitted. There are 400 possible points and 40 additional extra credit points, with each component weighted as follows:
 
-* 12 Homeworks (drop 2 lowest): 25
-* 4 Written Assignments (drop lowest): 25
-* Midterm: 25
-* Final: 25
-* Participation and Extra Credit: 10
+* 12 Homeworks (drop 2 lowest): 80
+* 4 Written Assignments (drop lowest): 90
+* Quiz 1: 60
+* Quiz 2: 60
+* Final: 80
+* Participation: 40
+* Extra Credit: 40
 
- Your letter grade will be determined according to the following percent distribution:
+Your total points are divided by 400, and your letter grade is determined according to the resulting percent as follows:
 
-- **A 93-100**
-- **A- 90-92.9**
-- **B+ 87-89.9**
-- **B 83-86.9**
-- **B- 80-82.9**
-- **C+ 77-79.9**
-- **C 73-76.9**
-- **C- 70-72.9**
-- **D+ 67-69.9**
-- **D 60-66.9**
-- **F <60**
+- **A:  93-100**
+- **A-: 90-92.9**
+- **B+: 87-89.9**
+- **B:  83-86.9**
+- **B-: 80-82.9**
+- **C+: 77-79.9**
+- **C:  73-76.9**
+- **C-: 70-72.9**
+- **D+: 67-69.9**
+- **D:  60-66.9**
+- **F:  <60**
 
 
 #### Homework
@@ -181,7 +120,7 @@ There will be 12 homework assignments, due each Friday by 5pm. We will often (bu
 
 If you are not happy with your score after submitting, you may resubmit one time as long as you do so before the deadline. If you restart the assignment, you will have to re-complete the questions you got correct as well as those you did not. **Be careful not to mark the wrong answer for a question you already got correct**.
 
-Sapling tech support is the only source for help with technical difficulties. Much to my chagrin, I do not have the ability to resolve technical issues with Sapling. To contact Sapling Technical Support, go to https://community.macmillan.com/community/digital-product-support, or call 1-800-936-6899.  As a reference, the course ID in Sapling is **68335**.
+Sapling tech support is the only source for help with technical difficulties. Much to my chagrin, I do not have the ability to resolve technical issues with Sapling. To contact Sapling Technical Support, go to https://community.macmillan.com/community/digital-product-support, or call 1-800-936-6899.  As a reference, the course ID in Sapling is **84139**.
 
 There is a grace period before you have to pay, which means that, if you are waiting on Financial Aid, you can register to Sapling and receive access to the e-book and homework.  Once you receive your Financial Aid, you may pay for access for the rest of the semester.
 
@@ -197,13 +136,13 @@ After the second assignment is completed, we will vote to determine whether to u
 
 In the case of NetTutor, each written assignment is graded on two components: economics and grammar. Each component is graded as either *Meets Expectations* or *Needs Improvement*. If both components are graded as *Meets Expectations*, you'll receive full credit (100%) for that assignment. If you receive a *Needs Improvement* on either metric, you can revise and resubmit your essay no later than one week after receiving feedback. It will likely be worth seeking help from the EconLab, your TA, or myself to discuss revisions.
 
-#### Exams
+#### Quizzes and the Final Exam
 
-There will be three exams and a final.  Except for the final, the exam schedule will be posted in Blackboard and announced in class.  The regular exams will take place during class time.  The final exam will be cumulative, but with an emphasis on the material covered since the third test.
+There will be two quizzes and a final.  Except for the final, the quizzes are on the [class schedule](schedule/), in Blackboard, and announced in class.  The quizzes will take place during class time and will involve only the material covered since the last quiz.  The final exam will be cumulative, but with an emphasis on the material covered since the third test.
 
-The format of the exams will be multiple choice questions. Students can bring in one double-sided 4 $\times$ 6 inch note card for the exam. I will provide the most important formulas on the projector and you may use the note card to write in any additional material you may deem necessary.  Bubble sheets (or *Scantrons*) will be provided for each exam.  
+The format of the quizzes will be multiple choice questions. Bubble sheets (or *Scantrons*) will be provided for each exam.  
 
-**I will not allow students to take a test late**. You can however arrange to take a test ahead of time if you have an official university-sanctioned event that conflicts with the exam time.  If you need to reschedule as a result of a non-official event (you've scheduled surgery for that day, or you need to attend a wedding, etc.) you can arrange to take the test ahead of time as well.
+**I will not allow students to take a quiz late**. You can however arrange to take a quiz ahead of time if you have an official university-sanctioned event that conflicts with the quiz time.  If you need to reschedule as a result of a non-official event (you've scheduled surgery for that day, or you need to attend a wedding, etc.) you can arrange to take the quiz ahead of time as well.
 
 **Final Exam**:  Monday, December 10, 1:00-3:00 pm. The room will be announced at least 2 weeks before the Final Exam.
 
@@ -217,13 +156,21 @@ The format of the exams will be multiple choice questions. Students can bring in
 
 * **Academic Rule 78**: During final examination week, if the scheduled arrangement results in students having three or more examinations scheduled for any one day, any one of their instructors is authorized to excuse the students from the regularly scheduled examination and give a final examination to the students during the special exams time blocks.
 
+#### Class Participation
+
+Class participation points depend on two factors:
+
+* Answering in-class questions in an online form that will be displayed at the end of class. Each completed form will be worth one point.
+* Asking a substantive question during class. Each question is worth five points.
+
+These are subject to the following rules:
+
+1. You cannot accumulate more than 40 total participation points.
+2. Since there are 39 classes that aren't reviews or quizzes, everyone will receive one participation point to start. Questions asked during reviews still count toward participation points.
+
 #### Extra Credit
 
-You will have two opportunities to earn extra credit.  One is through Attendance as discussed above.  
-
-The other opportunity is a series of extra questions, "Module \#\#" in Sapling.  Note that they are due at different times in the semester and are meant to help you with homework.  As they are extra credit, I do not give extensions on them, unless there is a major technical issue with Sapling.  For each set, I will drop one or two of the lowest.  You must complete at least three from each set to get an extra credit dropped.  
-
-
+Extra credit will be given in the form of additional homeworks available online and will be posted and added to the schedule throughout the semester. There will be eight extra credit opportunities, each containing five questions worth one point. There is no option to retake or to turn in extra credit late.
 
 ## Course Policies
 
@@ -253,12 +200,17 @@ This is a modified code of conduct based on [The Carpentries code of conduct](ht
 
 Attendance will not be taken. That said, I expect students to attend every class. Students who do not come to class typically do not do well.
 
-In the event of a medical excuse or other serious problems, exceptions to this no-makeup policy will be considered following University policies. See Office of the Registrar, Our Academic Regulations, No. 73 Absences: http://registrar.wsu.edu/academic-regulations/ (you will need to scroll down).
-
-
 ### Make-up policy
 
-There are no make-ups or late assignments accepted.
+There are no make-ups or late assignments accepted unless a documented medical emergency or death in the family.
+
+In the event of a medical excuse or other serious problems, exceptions to this no-makeup policy will be considered following University policies. See Office of the Registrar, Our Academic Regulations, No. 73 Absences: http://registrar.wsu.edu/academic-regulations/ (you will need to scroll down).
+
+### Academic Integrity
+
+Any student caught cheating, plagiarizing, or fabrication will receive a zero on that assignment, quiz, or exam, and a written warning submitted to the WSU Office of Student Standards and Accountability. If caught a second time you will receive a failing grade and I will seek to have you expelled. I have zero tolerance for violations of academic integrity.
+
+In addition, please see the WSU Academic Integrity Policy below.
 
 
 ## WSU Policies
